@@ -18,7 +18,7 @@ read RUTE
 
 mkdir $NAME-favicons
 
-# Now a FOR loop writes all the necessary html tags using the route given by the user before
+# Now these FOR loop write all the necessary html tags using the route given by the user before
 
 echo 'Writing the HTML tags...'
 
