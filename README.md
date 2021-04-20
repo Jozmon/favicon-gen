@@ -7,7 +7,9 @@ Inkscape installed on the system and the source image for the favicons in SVG fo
 
 Also, you have to give execute permisions to the script:
 
-  $ chmod +x faviconGen.sh
+```shell
+$ chmod +x faviconGen.sh
+```
 
 ## Usage
 Make sure to have the script in the same folder as the source image.
