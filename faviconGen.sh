@@ -15,16 +15,34 @@ echo 'Route to use in the href attribute (ie.: /images/): '
 read RUTE
 
 # This command creates the folder according to the name given by the user
- 
+
 mkdir $NAME-favicons
 
 # Now a FOR loop writes all the necessary html tags using the route given by the user before
 
 echo 'Writing the HTML tags...'
 
-for RES in 16 32 128 152 167 180 192 196
+# Generic favicons
+
+for RES in 16 32 57 76 96 128 167 192 228
     do
         echo '<link rel="icon" type="image/png" sizes="'$RES'x'$RES'" href="'$RUTE'favicon-'$RES'.png">' \
+        >> ./$NAME-favicons/$NAME-html-favicons.html
+    done
+
+# Android favicons
+
+for RES in 196
+    do
+        echo '<link rel="shortcut icon" type="image/png" sizes="'$RES'x'$RES'" href="'$RUTE'favicon-'$RES'.png">' \
+        >> ./$NAME-favicons/$NAME-html-favicons.html
+    done
+
+# iOS favicons
+
+for RES in 120 152 180
+    do
+        echo '<link rel="apple-touch-icon" type="image/png" sizes="'$RES'x'$RES'" href="'$RUTE'favicon-'$RES'.png">' \
         >> ./$NAME-favicons/$NAME-html-favicons.html
     done
 
@@ -32,7 +50,7 @@ for RES in 16 32 128 152 167 180 192 196
 
 echo 'Generating the favicons in the necessary resolutions...'
 
-for RES in 16 32 128 152 167 180 192 196
+for RES in 16 32 57 76 96 128 152 167 180 192 196 228
     do
         inkscape --export-area-drawing \
         --export-png=./$NAME-favicons/favicon-$RES.png \
