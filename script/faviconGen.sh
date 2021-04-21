@@ -30,6 +30,19 @@ This is free software, and you are welcome to
 redistribute it under certain conditions.
 '
 
+# Check if Inskcape in installed
+
+echo 'Checking if Inskcape is installed in your system...'
+
+if ! inkscape --version &> /dev/null
+  then
+    echo -e 'Inkscape was not found in your system.\nPlease install it and try again.\n'
+    exit
+  else
+    echo -e 'Inkscape found!\n'
+fi
+
+
 # This prompts set the NAME and RUTE variables, for the folder that will store the output files and for the route to use in the HTML tags
 
 read -p 'Name for the html file (without the .html extension): ' NAME
