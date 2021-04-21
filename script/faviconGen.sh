@@ -1,11 +1,34 @@
 #! /bin/bash
-# Date: Apr 20, 2020
+# Date: Apr 20, 2021
 # Author: Dred Strauss
 # Email: dred@dredstrauss.com
 # Github page: https://github.com/dredstrauss/favicon-gen
 # Description: simple script to generate different favicon png's in different resolutions (just to save some time!)
 
+# Copyright (C) 2021  Dred Strauss
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 ###
+
+# Short notice about the script license
+
+echo 'Favicon Gen  Copyright (C) 2021  Dred Strauss
+This program comes with ABSOLUTELY NO WARRANTY.
+This is free software, and you are welcome to
+redistribute it under certain conditions.
+'
 
 # This prompts set the NAME and RUTE variables, for the folder that will store the output files and for the route to use in the HTML tags
 
