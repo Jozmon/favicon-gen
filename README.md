@@ -42,6 +42,7 @@ Done!
 Now we can check the results
 
 ```
+$ cd skull-favicons
 $ ls -lh
 total 76K
 -rw-r--r-- 1 dred dred 3.6K Apr 20 19:04 favicon-128.png
