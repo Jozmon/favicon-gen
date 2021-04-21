@@ -30,19 +30,49 @@ faviconGen.sh favicon.svg
 
 ```
 $ ./faviconGen.sh
-Name for the html file (without the .html extension):
-skull
-Route to use in the href attribute (ie.: /images/):
-/assets/img/
+Favicon Gen  Copyright (C) 2021  Dred Strauss
+This program comes with ABSOLUTELY NO WARRANTY.
+This is free software, and you are welcome to
+redistribute it under certain conditions.
+
+Checking if Inskcape is installed in your system...
+Inkscape found!
+
+Name for the html file (without the .html extension): myweb    
+Route to use in the href attribute (ie.: /images/): /assets/img/
+
 Writing the HTML tags...
-Generating the favicons in the necessary resolutions...
+
+HTML tags for generic favicons created...
+HTML tags for Android favicons created...
+HTML tags for iOS favicons created...
 Done!
+
+Generating the favicons in the necessary resolutions...
+
+16x16 favicon created...
+32x32 favicon created...
+57x57 favicon created...
+76x76 favicon created...
+96x96 favicon created...
+128x128 favicon created...
+152x152 favicon created...
+167x167 favicon created...
+180x180 favicon created...
+192x192 favicon created...
+196x196 favicon created...
+228x228 favicon created...
+Done!
+
+Favicons and the HTML file with all the necessary tags are located in: ./myweb-favicons/
+
+Bye!
 ```
 
 Now we can check the results
 
 ```
-$ cd skull-favicons
+$ cd myweb-favicons
 $ ls -lh
 total 76K
 -rw-r--r-- 1 dred dred 3.6K Apr 20 19:04 favicon-128.png
@@ -57,10 +87,10 @@ total 76K
 -rw-r--r-- 1 dred dred 1.7K Apr 20 19:04 favicon-57.png
 -rw-r--r-- 1 dred dred 2.3K Apr 20 19:04 favicon-76.png
 -rw-r--r-- 1 dred dred 2.7K Apr 20 19:04 favicon-96.png
--rw-r--r-- 1 dred dred 1.2K Apr 20 19:04 skull-html-favicons.html
+-rw-r--r-- 1 dred dred 1.2K Apr 20 19:04 myweb-html-favicons.html
 ```
 
-Contents of `skull-html-favicons.html`:
+Contents of `myweb-html-favicons.html`:
 
 ```html
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
