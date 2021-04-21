@@ -1,4 +1,5 @@
 # Favicon Gen
+
 Simple linux script to generate favicons in different resolutions and all their necessary HTML tags for a website.
 
 ## Requirements
@@ -7,41 +8,28 @@ Inkscape installed on the system and the source image for the favicons in SVG fo
 
 Also, you have to give execute permisions to the script:
 
-```shell
+```
 $ chmod +x faviconGen.sh
 ```
 
 ## Usage
+
 Make sure to have the script in the same folder as the source image.
 This file must be named "favicon.svg" and the image must have a 1:1 ratio.
 
 After running the script, it will ask for a name and a route. The name is only for creating the destination folder and the **html** with the tags, it could be anything valid as a folder name (something like "my-website"). And the route is the one to use as the **href** attribute for the favicons (something like "/img/").
 
-## Demonstration
+## Demo
 
-First we place the source file and the script in the same folder.
-
-```
-dred@debian:~/fg$ ls -lh
-total 8.0K
--rw-r--r-- 1 dred dred 1.9K Apr 20 18:43 faviconGen.sh
--rw-r--r-- 1 dred dred 3.1K Apr 20 18:43 favicon.svg
-```
-
-Then we give the script execute permissions.
+First, we place the source file and the script in the same folder. Then, we run the script
 
 ```
-dred@debian:~/fg$ ls -l faviconGen.sh
--rw-r--r-- 1 dred dred 1866 Apr 20 18:43 faviconGen.sh
-dred@debian:~/fg$ chmod +x faviconGen.sh
-dred@debian:~/fg$ ls -l faviconGen.sh
--rwxr-xr-x 1 dred dred 1866 Apr 20 18:43 faviconGen.sh
+$ ls
+faviconGen.sh favicon.svg
 ```
 
-Finally we run the script.
-
 ```
-dred@debian:~/fg$ ./faviconGen.sh
+$ ./faviconGen.sh
 Name for the html file (without the .html extension):
 skull
 Route to use in the href attribute (ie.: /images/):
@@ -51,16 +39,10 @@ Generating the favicons in the necessary resolutions...
 Done!
 ```
 
-Now we can check the results.
+Now we can check the results
 
 ```
-dred@debian:~/fg$ ls -lh
-total 12K
--rwxr-xr-x 1 dred dred 1.9K Apr 20 18:43 faviconGen.sh
--rw-r--r-- 1 dred dred 3.1K Apr 20 18:43 favicon.svg
-drwxr-xr-x 2 dred dred 4.0K Apr 20 19:04 skull-favicons
-dred@debian:~/fg$ cd skull-favicons
-dred@debian:~/fg/skull-favicons$ ls -lh
+$ ls -lh
 total 76K
 -rw-r--r-- 1 dred dred 3.6K Apr 20 19:04 favicon-128.png
 -rw-r--r-- 1 dred dred 4.4K Apr 20 19:04 favicon-152.png
@@ -77,8 +59,9 @@ total 76K
 -rw-r--r-- 1 dred dred 1.2K Apr 20 19:04 skull-html-favicons.html
 ```
 
-```
-dred@debian:~/fg/skull-favicons$ cat skull-html-favicons.html
+Contents of `skull-html-favicons.html`:
+
+```html
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="57x57" href="/assets/img/favicon-57.png">
