@@ -21,7 +21,7 @@ After running the script, it will ask for a name and a route. The name is only f
 
 First we place the source file and the script in the same folder.
 
-```shell
+```
 dred@debian:~/fg$ ls -lh
 total 8.0K
 -rwxr-xr-x 1 dred dred 1.9K Apr 20 18:43 faviconGen.sh
@@ -30,7 +30,7 @@ total 8.0K
 
 Then we give the script execute permissions.
 
-```shell
+```
 dred@debian:~/fg$ ls -l faviconGen.sh
 -rw-r--r-- 1 dred dred 1866 Apr 20 18:43 faviconGen.sh
 dred@debian:~/fg$ chmod +x faviconGen.sh
@@ -40,7 +40,7 @@ dred@debian:~/fg$ ls -l faviconGen.sh
 
 Finally we run the script.
 
-```shell
+```
 dred@debian:~/fg$ ./faviconGen.sh
 Name for the html file (without the .html extension):
 skull
@@ -53,7 +53,7 @@ Done!
 
 Now we can check the results.
 
-```shell
+```
 dred@debian:~/fg$ ls -lh
 total 12K
 -rwxr-xr-x 1 dred dred 1.9K Apr 20 18:43 faviconGen.sh
@@ -77,7 +77,7 @@ total 76K
 -rw-r--r-- 1 dred dred 1.2K Apr 20 19:04 skull-html-favicons.html
 ```
 
-```shell
+```
 dred@debian:~/fg/skull-favicons$ cat skull-html-favicons.html
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
