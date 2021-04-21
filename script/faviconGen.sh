@@ -46,6 +46,31 @@ fi
 # This prompts set the NAME and RUTE variables, for the folder that will store the output files and for the route to use in the HTML tags
 
 read -p 'Name for the html file (without the .html extension): ' NAME
+
+# Check if the folder already exists.
+
+if [ -d "./$NAME-favicons" ]; then
+    while true
+      do
+        read -n1 -p "There's already a folder using that name here. Delete it? (y/n): " OVERWRITEFOLDER
+        echo ""
+        case $OVERWRITEFOLDER in
+          [yY]*)
+          rm -rf ./$NAME-favicons;
+          break
+            ;;
+          [nN]*)
+            until [ ! -d "./$NAME-favicons" ]; do
+              read -p 'Write a different name for the html file (without the .html extension): ' NAME
+            done;
+          break
+            ;;
+          *)
+            ;;
+        esac
+      done
+fi
+
 read -p 'Route to use in the href attribute (ie.: /images/): ' RUTE
 
 # This command creates the folder according to the name given by the user
