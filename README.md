@@ -24,7 +24,7 @@ First we place the source file and the script in the same folder.
 ```
 dred@debian:~/fg$ ls -lh
 total 8.0K
--rwxr-xr-x 1 dred dred 1.9K Apr 20 18:43 faviconGen.sh
+-rw-r--r-- 1 dred dred 1.9K Apr 20 18:43 faviconGen.sh
 -rw-r--r-- 1 dred dred 3.1K Apr 20 18:43 favicon.svg
 ```
 
