@@ -54,7 +54,7 @@ mkdir $NAME-favicons
 
 # Now these FOR loop write all the necessary html tags using the route given by the user before
 
-echo 'Writing the HTML tags...'
+echo -e '\nWriting the HTML tags...\n'
 
 # Generic favicons
 
@@ -64,6 +64,8 @@ for RES in 16 32 57 76 96 128 167 192 228
         >> ./$NAME-favicons/$NAME-html-favicons.html
     done
 
+echo 'HTML tags for generic favicons created...'
+
 # Android favicons
 
 for RES in 196
@@ -71,6 +73,8 @@ for RES in 196
         echo '<link rel="shortcut icon" type="image/png" sizes="'$RES'x'$RES'" href="'$RUTE'favicon-'$RES'.png">' \
         >> ./$NAME-favicons/$NAME-html-favicons.html
     done
+
+echo 'HTML tags for Android favicons created...'
 
 # iOS favicons
 
@@ -80,9 +84,12 @@ for RES in 120 152 180
         >> ./$NAME-favicons/$NAME-html-favicons.html
     done
 
+echo 'HTML tags for iOS favicons created...'
+echo -e 'Done!\n'
+
 # And finally, the favicons are generated using Inkscape CLI functions
 
-echo 'Generating the favicons in the necessary resolutions...'
+echo -e 'Generating the favicons in the necessary resolutions...\n'
 
 for RES in 16 32 57 76 96 128 152 167 180 192 196 228
     do
@@ -90,6 +97,11 @@ for RES in 16 32 57 76 96 128 152 167 180 192 196 228
         --export-png=./$NAME-favicons/favicon-$RES.png \
         --export-width=$RES \
         --export-height=$RES favicon.svg 2> /dev/null
+
+        echo $RES'x'$RES 'favicon created...'
+
     done
 
-echo 'Done!'
+echo -e 'Done!\n'
+echo -e 'Favicons and the HTML file with all the necessary tags are located in: ./'$NAME'-favicons/\n'
+echo -e 'Bye!\n'
