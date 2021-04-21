@@ -32,10 +32,8 @@ redistribute it under certain conditions.
 
 # This prompts set the NAME and RUTE variables, for the folder that will store the output files and for the route to use in the HTML tags
 
-echo 'Name for the html file (without the .html extension): '
-read NAME
-echo 'Route to use in the href attribute (ie.: /images/): '
-read RUTE
+read -p 'Name for the html file (without the .html extension): ' NAME
+read -p 'Route to use in the href attribute (ie.: /images/): ' RUTE
 
 # This command creates the folder according to the name given by the user
 
