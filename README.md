@@ -39,7 +39,7 @@ Checking if Inskcape is installed in your system...
 Inkscape found!
 
 Name for the html file (without the .html extension): myweb    
-Route to use in the href attribute (ie.: /images/): /assets/img/
+Route to use in the href attribute (ie.: images/): assets/img/
 
 Writing the HTML tags...
 
@@ -93,19 +93,19 @@ total 76K
 Contents of `myweb-html-favicons.html`:
 
 ```html
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
-<link rel="icon" type="image/png" sizes="57x57" href="/assets/img/favicon-57.png">
-<link rel="icon" type="image/png" sizes="76x76" href="/assets/img/favicon-76.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96.png">
-<link rel="icon" type="image/png" sizes="128x128" href="/assets/img/favicon-128.png">
-<link rel="icon" type="image/png" sizes="167x167" href="/assets/img/favicon-167.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
-<link rel="icon" type="image/png" sizes="228x228" href="/assets/img/favicon-228.png">
-<link rel="shortcut icon" type="image/png" sizes="196x196" href="/assets/img/favicon-196.png">
-<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="/assets/img/favicon-120.png">
-<link rel="apple-touch-icon" type="image/png" sizes="152x152" href="/assets/img/favicon-152.png">
-<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/img/favicon-180.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="57x57" href="assets/img/favicon-57.png">
+<link rel="icon" type="image/png" sizes="76x76" href="assets/img/favicon-76.png">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96.png">
+<link rel="icon" type="image/png" sizes="128x128" href="assets/img/favicon-128.png">
+<link rel="icon" type="image/png" sizes="167x167" href="assets/img/favicon-167.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+<link rel="icon" type="image/png" sizes="228x228" href="assets/img/favicon-228.png">
+<link rel="shortcut icon" type="image/png" sizes="196x196" href="assets/img/favicon-196.png">
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="assets/img/favicon-120.png">
+<link rel="apple-touch-icon" type="image/png" sizes="152x152" href="assets/img/favicon-152.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/favicon-180.png">
 ```
 
 ### About the author
