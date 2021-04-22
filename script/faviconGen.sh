@@ -79,8 +79,6 @@ while [[ $RUTE != '/'*'/' ]]; do
   read -p 'It must be a valid rute (ie.: /assets/img/): ' RUTE
 done
 
-echo 'Much better!'
-
 # This command creates the folder according to the name given by the user
 
 mkdir $NAME-favicons
