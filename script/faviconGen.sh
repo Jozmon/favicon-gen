@@ -71,12 +71,12 @@ if [ -d "./$NAME-favicons" ]; then
       done
 fi
 
-read -p 'Route to use in the href attribute (ie.: /images/): ' RUTE
+read -p 'Route to use in the href attribute (ie.: images/): ' RUTE
 
 # Check if that is a valid route.
 
-while [[ $RUTE != '/'*'/' ]]; do
-  read -p 'It must be a valid rute (ie.: /assets/img/): ' RUTE
+while [[ $RUTE != *'/' ]]; do
+  read -p 'It must be a valid rute (ie.: assets/img/): ' RUTE
 done
 
 # This command creates the folder according to the name given by the user
