@@ -14,22 +14,20 @@ $ chmod +x faviconGen.sh
 
 ## Usage
 
-Make sure to have the script in the same folder as the source image.
-This file must be named "favicon.svg" and the image must have a 1:1 ratio.
+Make sure to have the script in the same folder as the source image or install it to /usr/local/bin.
+The file must be ".svg" and the image must have a 1:1 ratio.
 
 After running the script, it will ask for a name and a route. The name is only for creating the destination folder and the **html** with the tags, it could be anything valid as a folder name (something like "my-website"). And the route is the one to use as the **href** attribute for the favicons (something like "/img/").
 
-## Demo
+## Usage
 
-First, we place the source file and the script in the same folder. Then, we run the script
+After we installed the script or place it in the same directory  
+we use it like this:
 
-```
-$ ls
-faviconGen.sh favicon.svg
-```
+
 
 ```
-$ ./faviconGen.sh
+$ ./faviconGen.sh YOUR_FILE_NAME.svg
 Favicon Gen  Copyright (C) 2021  Dred Strauss
 This program comes with ABSOLUTELY NO WARRANTY.
 This is free software, and you are welcome to
@@ -108,10 +106,12 @@ Contents of `myweb-html-favicons.html`:
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/favicon-180.png">
 ```
 
-### About the author
+### About the authors
 
 I'm just starting to learn about coding. I made this extremely simple script just to save some time while I'm practicing creating different websites.
 
 Probably I'll add some validations and an option to select specific resolutions.
 
+
 Thanks!
+
